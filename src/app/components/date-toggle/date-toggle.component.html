@@ -1,0 +1,25 @@
+<div id="dateDiv">
+    <span class="rectangle-date">
+      Today:
+      <span class="date">
+        20 Apr
+      </span>
+      <button [ngStyle]="{'border': 'none'}" (click)="showDate = !showDate">
+        <i class="button icon-ctrl"> </i>
+      </button>
+    </span>
+    <div id="divRange" *ngIf="showDate">
+      <ul>
+        <li class="active">Today</li>
+        <li>Yesterday</li>
+        <li>Last 7 Days</li>
+        <li>Last 30 Days</li>
+        <li>This Month</li>
+        <li>Last Month</li>
+        <li>Custom Range</li>
+      </ul>
+
+      <button class="danger">Apply</button>
+      <button class="default-outline" (click)="showDate = false">Cancel</button>
+    </div>
+  </div>

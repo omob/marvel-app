@@ -1,0 +1,213 @@
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .title{
+    font-size: 18px;
+    color: #3a3a3a;
+  }
+  
+  .w-100{
+      width: 100%;
+  }
+
+  .card span.header{
+    color: #4A4A4A;
+    font-family: 'Circular Std';
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+
+  .card span.header + span{
+    color: #4A4A4A;
+    font-family: 'Circular Std';
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    text-align: left;
+  }
+
+  .card{
+    box-shadow: 0px 0px 1px #D6D6D6;
+    max-width: 270px;
+    height: 230px;
+    padding: 20px;
+    padding-top: 30px;
+    position: relative;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+
+  .card:after{
+    content: "";
+    height: 2.6px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .card.red:after{
+    background-color: rgb(255, 0, 98);
+  }
+
+  .card.green:after{
+    background-color: #00C3A2;
+  }
+  .card.light-blue:after{
+    background-color: #00C9E0;
+  }
+  .card.purple:after{
+    background-color: #7269D0;
+  }
+
+  .card .line{
+    width: 165px;
+    height: 87px;
+    /* background: red; */
+    margin-top: 30px;
+    background-size: 165px 45px;
+  }
+
+  .card .line.one{
+    background: url(../../../assets/curve2.svg) center center no-repeat;
+  }
+
+  .card .line.two{
+    background: url(../../../assets/curve1.svg) center center no-repeat;
+  }
+
+  .card .line.three{
+    background: url(../../../assets/curve3.svg) center center no-repeat;
+  }
+
+  .card .line.four{
+    background: url(../../../assets/curve4.svg) center center no-repeat;
+  }
+
+  #graph{
+    /* background: url(../../../assets/graphy.svg) center center no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%; */
+  }
+/* 
+  input[type="search"]{
+    padding: 8px 15px;
+    width: 200px;
+    border: none;
+    opacity: .6;
+    border: 0.5px solid rgb(226, 226, 226);
+    width: 229px;
+    height: 36px;
+    color: rgb(32, 32, 32);
+    outline: none
+  }
+
+  input[type="search"]:focus{
+    opacity: 1;
+  }
+  .rectangle-date{
+    background-color: #ECECEC;
+    border-radius: 12px;
+    width: 118px;
+    display: inline-block;
+    height: 24px;
+    margin-left: 20px;
+    line-height: 26px;
+    font-size: 14px;
+    font-size: 12px;
+    text-indent: 12px;
+    position: relative;
+    color: rgb(167, 167, 167)
+  }
+  .rectangle-date span{
+    color: rgb(22, 22, 22);
+    font-weight: 500;
+    font-family: 'Circular Std';
+  }
+
+  .rectangle-date i.button{
+    display: inline-block;
+    height: 100%;
+    background-color: #000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 24px;
+    height: 24px;
+    background: rgb(56, 56, 56);
+    position: absolute;
+    right: 1px;
+    top: 0;
+    border-radius: 100%;
+    cursor: pointer;
+  } */
+  /* background-color: #FF3D69;
+  width: 215px;
+  height: 2px; */
+
+  .card-lg{
+    height: 100%;
+    border: 0.5px solid rgb(226, 226, 226);
+    /* box-shadow: 0px 0px 1px #D6D6D6; */
+    opacity: 0.9111865942028986;
+    max-width: 615px;
+    background: url(../../../assets/graphy.svg) bottom no-repeat;
+    background-size: contain;
+    position: relative;
+    background-position: -1px 100%;
+    min-height: 450px;
+  }
+
+  .card-lg .card-header{
+    padding: 15px 20px;
+    border-bottom: 0.5px solid rgb(226, 226, 226);
+    font-size: 14px;
+  }
+
+  .card-lg .card-body span{
+    display: block;
+    font-size: 14px;
+    color: rgb(77, 77, 77)
+  }
+
+  .card-lg .card-body span.bold{
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: rgb(37, 37, 37);
+
+  }
+  .card-lg .card-body{
+    padding: 20px
+  }
+  .summary {
+    color: rgb(37, 37, 37);
+    font-family: 'Circular Std';
+    font-weight: 600;
+    text-align: left;
+  }
+
+.btn-round{
+  width: 70px;
+  background-color: #c82b1d;
+  border-radius: 25px;
+  border: none;
+  font-family: 'Circular Std';
+  padding: 6px;
+  font-size: 12px;
+  margin: 0 0px 0px 20px;
+  color: #fff;
+}
+
+ 

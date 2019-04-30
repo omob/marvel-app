@@ -1,0 +1,57 @@
+button{
+    border: none;
+    padding: 5px 25px;
+    border-radius: 2px;
+    height: 38px;
+    margin-right: 10px;
+    font-family: "Circular Std";
+    font-size: 12px;
+    min-width: 150px;
+    width: 220px;
+    /* max-width: 250px; */
+    background-color: rgb(153, 153, 153);
+    color: rgb(240, 239, 239);
+    font-weight: 600
+}
+
+table{
+    /* padding: 0 20px */
+}
+
+thead th{
+   color: rgb(143, 143, 143);
+   font-weight: 100;
+   font-size: 14px;
+   padding-right: 20px;
+   padding-bottom: 5px;
+   text-align: left;
+   text-indent: 20px;
+}
+
+table tbody tr {
+    padding: 10px 5px;
+    width: 100%;
+    box-shadow: 0px 0px 1px rgb(194, 194, 194);
+    margin-bottom: 5px;
+}
+
+table tbody td{
+    padding: 15px;
+    color: rgb(134, 134, 134);
+}
+
+.status{
+    display: inline-block;
+    border: 5px solid;
+    margin-right: 10px;
+    border-radius: 100%;
+}
+
+.active{
+    border-color: #008011;
+}
+
+.inactive{
+    border-color: #cc2f2f;
+
+}

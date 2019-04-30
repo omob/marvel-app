@@ -1,0 +1,18 @@
+<nav class="navbar">
+  <div id="logo">
+  </div>
+  <div class="navMenu">
+    <button class="notification">
+      <i class="icomon-notification"></i>
+    </button>
+    <button>
+      <div class="upic">
+      </div>
+    </button>
+    <button id="toggle" [class.toggled]="showSideBarT" (click)="onShowSideBar()">
+        <span class="top-bar"></span>
+        <span class="middle-bar"></span>
+        <span class="bottom-bar"></span>
+    </button>
+  </div>
+</nav>

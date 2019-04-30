@@ -1,0 +1,21 @@
+#noMerchant{ 
+    position: relative;
+    top: 100px;
+}
+
+#noMerchant span{
+    display: block;
+    font-size: 12px;
+    border: .5px dashed #9e9e9e;
+    padding: 11px 20px;
+    width: 300px;
+    margin: auto;
+    color: #444444;
+    font-weight: 400
+}
+
+#noMerchant span a{
+    color: rgb(206, 3, 3);
+    font-weight: 900;
+    font-size: 13px;
+}

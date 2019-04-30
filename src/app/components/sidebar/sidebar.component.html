@@ -1,0 +1,49 @@
+<div class="rectangle" [class.show] = "showSideBar">
+    <nav>
+        <ul>
+            <li routerLink="home"> <i class="icon-dashboard"></i> Dashboard </li>
+            <li> 
+                <span (click)="hideContentSubNav = !hideContentSubNav"> 
+                    <i class="icon-cms"></i> Content Management 
+                </span>
+                <span class="dropdownIcon" [class.active]="!hideContentSubNav"></span>
+                <ul class="subnav" *ngIf="!hideContentSubNav">
+                    <li routerLink="merchant"> Merchant Partners </li>
+                </ul>
+            </li>
+            <li> 
+                <span  (click)="hideUserSubNav = !hideUserSubNav">
+                    <i class="icon-user"></i> User Management
+                </span>
+                <span class="dropdownIcon" [class.active]="!hideUserSubNav"></span>
+                <ul class="subnav" *ngIf="!hideUserSubNav">
+                    <li routerLink="/dashboard/users"> Users</li>
+                    <li routerLink="/dashboard/admin-user"> Admin Users</li>
+
+                </ul>
+            </li>
+            <li > 
+                <span (click)="hideReportingSubNav = !hideReportingSubNav">
+                    <i class="icon-reporting"></i> Reporting 
+                </span>
+                <span class="dropdownIcon" [class.active]="!hideReportingSubNav"></span>
+                <ul class="subnav" *ngIf="!hideReportingSubNav">
+                    <li routerLink="/dashboard/report/portal"> Portal Report </li>
+                    <li routerLink="/dashboard/report/redemption"> Redemption Report </li>
+                    <li> BI </li>
+                </ul>
+            </li>
+            <li routerLink="settings"> <i class="icon-settings"></i>  System Settings </li>
+
+        </ul>
+    </nav>
+
+    <div class="footer">
+        <div id="footerLogo"></div>
+
+        <div class="pt-2"></div>
+
+        <span>Copyright &copy; 2018 UBA Group PLC.</span>
+        <span>Powered by Interswitch</span>
+    </div>
+</div>

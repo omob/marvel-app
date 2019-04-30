@@ -1,0 +1,6 @@
+<c-navbar (change)="onShowSideBar($event)"></c-navbar>
+
+<app-sidebar [showSideBar]="showSideBar"></app-sidebar>
+<section id="content" class="pt-2" [class.show]="showSideBar">
+  <router-outlet></router-outlet>
+</section>

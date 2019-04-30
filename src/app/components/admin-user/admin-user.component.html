@@ -1,0 +1,51 @@
+<div class="contentDiv">
+    <div class="row no-gutters">
+      <div class="col-md-4 col-lg-6">
+        <div class="pt-05"></div>
+        <span class="title">Admin Users</span>
+        <date-toggle></date-toggle>
+      </div>
+      <div class="col-md-8 col-lg-6">
+        <div class="form-group" align="right">
+          <div class="row no-gutters">
+            <div class="col">
+              <button class="btn btn-default">New Admin User</button>
+            </div>
+            <div class="col">
+              <input type="search" class="form-control" placeholder="Search">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+<div class="row no-gutters pt-3">
+  <table class="col-12">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Current Sign In At </th>
+          <th>Last Sign In At</th>
+          <th> Status</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let td of tableData">
+          <td> {{ td.email}} </td>
+          <td> {{ td.role }} </td>
+          <td> {{ td.currentSignIn }} </td>
+          <td> {{ td.lastSignIn }} </td>
+          <td> <span class="status" [ngClass]="{
+            'active':td.status == 'Active', 
+            'inactive':td.status != 'Active'
+          }"></span>{{ td.status }} </td>
+          <td> <span class="icomon"> </span> </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+       

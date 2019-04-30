@@ -1,0 +1,43 @@
+<div class="contentDiv">
+    <div class="row no-gutters">
+      <div class="col-md-6 col-sm-6 col-lg-8 pb-1">
+          <div class="pt-05"></div>
+          <span class="title">Redemption Report</span>
+          <date-toggle></date-toggle>
+        </div>
+        <div class="col-md-6  col-sm-6 col-lg-4">
+          <div class="form-group" align="right">
+            <input type="search" class="form-control" placeholder="Search">
+          </div>
+        </div>
+    </div>
+
+    <div class="row no-gutters pt-3">
+      <table class="col-12">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Value (Points) </th>
+              <th>Value (Naira)</th>
+              <th>Portal Partner</th>
+              <th>Status</th>
+              <th>Created At</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let td of tableData">
+              <td> {{ td.product}} </td>
+              <td> {{ td.valuePoints }} </td>
+              <td> {{ td.valueNaira }} </td>
+              <td> {{ td.portalPartner }} </td>
+              <td> {{ td.status }} </td>
+              <td> {{ td.createdAt }} </td>
+              <td> <span class="icomon"> </span> </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    
+
+</div>

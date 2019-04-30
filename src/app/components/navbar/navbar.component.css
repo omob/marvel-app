@@ -1,0 +1,147 @@
+.navbar {
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.08);
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo{
+    background: url('../../../assets/rewards-logo.png') center center no-repeat;
+    height: 50px;
+    width: 200px;
+    background-size: 160px;
+    position: relative;
+    top: 6px;
+    left: 20px;
+}
+
+.upic {
+    background-image: url(https://marvel-live.freetls.fastly.net/canvas/2018/4/3b6c4cca24204055a4ed75e5ec6c50a1?quality=95&fake=.png);
+    background-size: 100%;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+  }
+
+  .navMenu{
+    position: absolute;
+    right: 50px;
+    top: 14px;
+  }
+
+  button{
+      outline: none;
+  }
+  .navMenu button{
+      background: transparent;
+      border: none;
+      cursor: pointer;
+  }
+
+  .navMenu button.notification{
+    background: #e4e4e4;
+    border: none;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: -5px;
+    border-radius: 50%;
+    right: 12px;
+    background-image: url(../../../assets/notification.svg);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* hamburger */
+  
+@media(min-width: 992px){
+    #toggle{
+        display: none;
+    }
+}
+
+#toggle {
+    /* position: fixed; */
+    /* top: 45%; */
+    /* left: 2px; */
+    position: relative;
+    width: 30px;
+    background: 0 0;
+    border: none;
+    padding-left: 10px;
+    z-index: 1000;
+    -webkit-transition: .7s;
+    -moz-transition: .7s;
+    -ms-transition: .7s;
+    -o-transition: .7s;
+    transition: .7s;
+    opacity: .8;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    -o-border-radius: 1px;
+    border-radius: 1px;
+    outline: 0
+}
+
+.toggled .top-bar {
+    -webkit-transform: rotate(45deg)
+}
+
+#toggle>span {
+    height: 2px;
+    content: "-";
+    background-color: #b5b5b5;
+    display: block;
+    margin: 5px 4px 6px -2px;
+    width: 30px;
+    outline: 0
+}
+
+.togglehover {
+    background-color: #333!important
+}
+
+.bottom-bar,
+.middle-bar,
+.top-bar {
+    -o-transition: .3s;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    -ms-transition: .3s;
+    transition: .3s
+}
+
+.toggled .top-bar {
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 12% 80%;
+    -moz-transform-origin: 12% 80%;
+    -o-transform-origin: 12% 80%;
+    -ms-transform-origin: 12% 80%;
+    transform-origin: 12% 80%
+}
+
+.toggled .bottom-bar {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 10% 90%;
+    -moz-transform-origin: 10% 90%;
+    -o-transform-origin: 10% 90%;
+    -ms-transform-origin: 10% 90%;
+    transform-origin: 10% 90%
+}
+
+.toggled .middle-bar {
+    opacity: 0
+}
+

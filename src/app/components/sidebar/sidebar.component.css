@@ -1,0 +1,134 @@
+.rectangle {
+    background-color: #2F2D2E;
+    width: 250px;
+    height: 100%;
+    position: fixed; 
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+    transition: .3s;
+  }
+
+  @media(max-width: 992px){
+    #content{
+        transform: translateX(0)
+    }
+    .rectangle{
+      transform: translateX(-255px)
+    }
+  }
+
+  .show{
+      transform: translateX(0)
+  }
+
+  nav{
+    position: relative;
+    top: 12%;
+    height: 60%;
+    overflow-y: scroll;
+  }
+
+  nav ul{
+    padding-left: 20px;
+    left: 0;
+  }
+
+  nav ul li{
+    color: rgb(170, 170, 170);
+    font-family: 'Circular Std';
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: -0.25px;
+    line-height: 17px;
+    text-align: left;
+    display: block;
+    padding: 10px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    position: relative;
+    transition: .3s;
+    outline: none;
+  }
+
+  .dropdownIcon{
+    background-image: url(../../../assets/arrow-down.svg);
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 20px;
+    position: absolute;
+    top: 20px;
+    height: 10px; 
+    right: 0;
+}
+
+.dropdownIcon.active{
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+}
+
+  nav ul li span{
+    display: block;
+  }
+  nav ul li:hover{
+    color: #ffffff
+  }
+
+  nav::-webkit-scrollbar {
+    width: 10px;
+  }
+ 
+  nav::-webkit-scrollbar-track {
+      /* -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3); */
+  }
+  
+  nav::-webkit-scrollbar-thumb {
+    background-color: #c82b1d;
+    /* outline: 10px solid #c82b1d; */
+  }
+
+  nav ul.subnav{
+
+  }
+
+  nav ul.subnav li{
+    margin-left: 20px;
+    margin-top: 15px;
+    padding-bottom: 0;
+    color: #f3f3f3
+  }
+  
+  nav ul li i{
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+  }
+
+  .footer{
+      padding-left: 30px;
+      position: relative;
+      top: 10%;
+      height: 30%;
+  }
+
+  .footer span{
+    color: #9B9B9B;
+    font-family: 'Circular Std';
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    text-align: left;
+    display: block;
+  }
+
+  #footerLogo{
+    background: url('../../../assets/logo-red.png') left center no-repeat;
+    height: 76px;
+    width: 200px;
+    position: relative;
+    background-size: 100px;
+    top: 6px;
+  }

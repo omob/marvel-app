@@ -1,0 +1,29 @@
+<div class="contentDiv">
+  <h3> Systems Settings</h3>
+
+  <div class="pt-3"></div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>First Points Conversion Rate</th>
+        <th>Max Bank Account Per User</th>
+        <th>Max UBA Policies Per User</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let td of tableData">
+        <td> {{ td.fp}} </td>
+        <td> {{ td.mb }} </td>
+        <td> {{ td.mu }} </td>
+        <td> {{ td.created_date }} </td>
+        <td> {{ td.updated_date }} </td>
+        <td> <span class="icomon"> - </span> </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  
