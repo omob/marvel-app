@@ -2,8 +2,10 @@
 A Sample User/Admin Dashboard made with Angular to kickstart your project.
 Fully Responsive and Customizable.
 
-## Development server
+## Installation
+Run `npm install` to download dependencies 
 
+## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
