@@ -1,6 +1,6 @@
 # Mavelapp
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+A Sample User/Admin Dashboard made with Angular to kickstart your project. 
+Fully Responsive and Customizable.
 
 ## Development server
 
