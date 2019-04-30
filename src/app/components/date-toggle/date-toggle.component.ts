@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./date-toggle.component.css']
 })
 export class DateToggleComponent implements OnInit {
+  
+  showDate:boolean = false;
 
   constructor() { }
 
